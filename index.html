@@ -10,7 +10,6 @@
 </head>
 <style>
 /* I believe I can... */
-
 @keyframes sunshine {
 	0%, 75% {
 		top: -30vh;
@@ -39,8 +38,9 @@ body {
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
-	background: skyblue;
 	z-index: -2;
+	background:skyblue url(images/background.jpg) no-repeat left top;
+  	background-size:100%;
 }
 .container {
 	position: absolute;
@@ -58,7 +58,7 @@ body {
 	animation: sunshine 3s;
 	animation-fill-mode: forwards;
 }
-.sun {
+/* .sun {
 	position: absolute;
 	top: -15vh;
 	left: 0;
@@ -72,12 +72,12 @@ body {
 	background: lightgoldenrodyellow;
 	box-shadow: inset 0 0 10vw 5vw white, 0 0 15vw 10vw white;
 	filter: blur(20px);
-	/* For Firefox */
+
 	
 	transition: .5s;
 	animation: sunshine 3s ease-out;
 	z-index: -2;
-}
+} */
 svg {
 	position: absolute;
 	left: 0;
